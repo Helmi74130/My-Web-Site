@@ -33,9 +33,13 @@ body {
   font-style: normal;
 
 }
-
-h1{
-  color: #c0bcb4;
-  font-size: 6em;
-  font-family: 'basics_serif_freeregular';
+.title-container{
+  margin-top: 10%;
+  h1{
+    color: #c0bcb4;
+    font-size: 5vw;
+    font-family: 'basics_serif_freeregular';
+    line-height: 7vw;
+  }
 }
+
