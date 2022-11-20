@@ -1,5 +1,7 @@
+$beige: #c0bcb4;
 body { 
 	overflow-x: hidden;
+  height: 2000px;
 }
 .bg{
   height: 100vh;
@@ -8,7 +10,21 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  //background-color: #f8f8f4;
+  &::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    height: 70px;
+    background: linear-gradient(to top, #F8F8F4, transparent);
+  }
+}
+header{
+  font-family: 'kitahara_scriptregular';
+  font-size: 3vw;
+  a{
+    color: black ;
+  }
 }
 
 .earphone{
@@ -22,6 +38,7 @@ body {
   height: 50%;
   top: 60%;
   left: 2%;
+  z-index: 1;
 }
 
 
@@ -31,15 +48,59 @@ body {
        url('/font/basics_serif_-_free-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
+}
+@font-face {
+  font-family: 'kitahara_scriptregular';
+  src: url('/font/kitaharascript-webfont.woff2') format('woff2'),
+       url('/font/kitaharascript-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 
 }
 .title-container{
-  margin-top: 10%;
+  margin-top: 7%;
   h1{
-    color: #c0bcb4;
+    color: $beige;
     font-size: 5vw;
     font-family: 'basics_serif_freeregular';
-    line-height: 7vw;
+    line-height: 8vw;
   }
 }
 
+.streamer{
+  position: absolute;
+  text-align: center;
+  top: 79%;
+  color: $beige;
+  border: 2px $beige solid;
+  transform: translateX(-200px);
+  height: 100px;
+  width: 200px;
+  font-size: 150%;
+  &::after{
+    content: "";
+    position: absolute;
+    left: 201px;
+    height: 2px;
+    width: 40%;
+    background: $beige;
+    z-index: -1;
+  }
+
+}
+.earphone{
+    transform-origin: top left;
+}
+
+main{
+  background: #C5E8E3;
+  height: 100vh;
+  width: 100vw;
+  &::before{
+    content: '';
+    position: absolute;
+    width: 100vw;
+    height: 130px;
+    background: linear-gradient(to bottom, #F8F8F4, transparent);
+  }
+}
