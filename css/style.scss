@@ -1,7 +1,10 @@
 $beige: #c0bcb4;
+
+html {overflow-x: hidden}
 body { 
-	overflow-x: hidden;
-  height: 2000px;
+  overflow-x: hidden;
+
+  height: 10000px;
 }
 .bg{
   height: 100vh;
@@ -41,7 +44,6 @@ header{
   z-index: 1;
 }
 
-
 @font-face {
   font-family: 'basics_serif_freeregular';
   src: url('/font/basics_serif_-_free-webfont.woff2') format('woff2'),
@@ -60,8 +62,8 @@ header{
 .title-container{
   margin-top: 7%;
   h1{
-    color: $beige;
-    font-size: 5vw;
+    color: rgb(95, 93, 93);
+    font-size: calc(2vw + 4vh + 2vmin);
     font-family: 'basics_serif_freeregular';
     line-height: 8vw;
   }
@@ -71,7 +73,7 @@ header{
   position: absolute;
   text-align: center;
   top: 79%;
-  color: $beige;
+  color: black;
   border: 2px $beige solid;
   transform: translateX(-200px);
   height: 100px;
@@ -94,7 +96,6 @@ header{
 
 main{
   background: #C5E8E3;
-  height: 100vh;
   width: 100vw;
   &::before{
     content: '';
@@ -103,4 +104,22 @@ main{
     height: 130px;
     background: linear-gradient(to bottom, #F8F8F4, transparent);
   }
+  h2{
+    color: $beige;
+    font-size: calc(1vw + 1vh + 2vmin);
+    font-family: 'basics_serif_freeregular';
+    line-height: 5vw;
+  }
+}
+
+.a{
+  background: #000;
+}
+.bulb-img{
+  max-width: 100%;
+  height: 500px;
+}
+
+.clock-img{
+  height: 300px;
 }
